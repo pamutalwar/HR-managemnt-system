@@ -1,0 +1,86 @@
+/* General layout */
+.payslip-container {
+  padding: 40px;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.payslip-card {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.payslip-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* Table styles */
+.payslip-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payslip-table th,
+.payslip-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.payslip-table th {
+  background-color: #f1f5f9;
+  color: #444;
+}
+
+.payslip-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Status badges */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 0.9em;
+}
+
+.status-badge.paid {
+  background-color: #28a745;
+}
+
+.status-badge.processing {
+  background-color: #ffc107;
+  color: #333;
+}
+
+/* Download button */
+.download-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+/* No data row */
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-style: italic;
+}

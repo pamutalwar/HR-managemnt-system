@@ -1,0 +1,115 @@
+/* Main container */
+.profile-container {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Profile card */
+.profile-card {
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.profile-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+/* Form grid */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  .profile-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Input field container */
+.profile-field label {
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* Input styles */
+.profile-field input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Read-only vs editable */
+.readonly {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.editable {
+  background-color: #fff;
+  border: 1px solid #007bff;
+  color: #000;
+}
+
+.editable:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* Button section */
+.profile-actions {
+  margin-top: 24px;
+  text-align: right;
+}
+
+/* Button base */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit button */
+.edit-btn {
+  background-color: #007bff;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Update button */
+.update-btn {
+  background-color: #28a745;
+}
+
+.update-btn:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,99 @@
+.hr-container {
+  background-color: #f2f4f8;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.hr-box {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hr-title {
+  font-size: 22px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.hr-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.hr-form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.hr-form input,
+.hr-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.hr-form button {
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hr-form button:hover {
+  background-color: #2471a3;
+}
+
+.query-list {
+  list-style: none;
+  padding: 0;
+}
+
+.query-item {
+  background-color: #fafafa;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.query-subject {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.query-message {
+  font-size: 14px;
+  color: #555;
+}
+
+.status {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.status.resolved {
+  background-color: #e0f7e9;
+  color: #27ae60;
+}
+
+.status.pending {
+  background-color: #fff3cd;
+  color: #d39e00;
+}

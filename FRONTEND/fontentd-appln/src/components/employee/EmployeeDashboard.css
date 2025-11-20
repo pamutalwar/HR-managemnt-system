@@ -1,0 +1,94 @@
+/* Reset & Layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f6f8;
+}
+
+.layout-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6c5ce7;
+  margin-bottom: 30px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.nav-links a {
+  color: #2d3436;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #6c5ce7;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.topbar button {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.topbar button:hover {
+  background-color: #5a4bd1;
+}
+
+.main-outlet {
+  flex-grow: 1;
+}

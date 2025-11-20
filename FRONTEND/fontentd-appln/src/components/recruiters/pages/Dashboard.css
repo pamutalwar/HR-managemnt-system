@@ -1,0 +1,40 @@
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    font-family: sans-serif;
+  }
+  .dashboard-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .dashboard-content {
+    padding: 1rem;
+    flex: 1;
+  }
+  .dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .card {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0 1px #e5e7eb;
+    font-weight: bold;
+    text-align: center;
+  }
+  .dashboard-charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .chart-box {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0 1px #e5e7eb;
+  }
+  
