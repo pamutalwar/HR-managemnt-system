@@ -48,7 +48,7 @@ public class ExcelRService {
 //	 private final S3Client s3Client = S3Client.builder()
 //	            .region(Region.EU_NORTH_1)
 //	            .credentialsProvider(StaticCredentialsProvider.create(
-//	                AwsBasicCredentials.create("***REMOVED_AWS_ACCESS_KEY***", "***REMOVED_AWS_SECRET_KEY***")
+//	                AwsBasicCredentials.create(System.getenv("AWS_ACCESS_KEY_ID"), System.getenv("AWS_SECRET_ACCESS_KEY"))
 //	            ))
 //	            .build();
 //	 
@@ -114,7 +114,7 @@ public class ExcelRService {
 //    private String secret;
 
 //    public String createOrder(int amount, String currency, String receipt) throws RazorpayException {
-//        RazorpayClient razorpay = new RazorpayClient("***REMOVED_RAZORPAY_KEY***", "***REMOVED_RAZORPAY_SECRET***");
+//        RazorpayClient razorpay = new RazorpayClient(System.getenv("RAZORPAY_KEY"), System.getenv("RAZORPAY_SECRET"));
 //
 //        JSONObject orderRequest = new JSONObject();
 //        orderRequest.put("amount", amount * 100); // Amount in paise
@@ -126,7 +126,7 @@ public class ExcelRService {
 //    }
 //
 //    public boolean verifyPayment(String orderId, String paymentId, String signature) {
-//        String generatedSignature = HmacSHA256(orderId + "|" + paymentId, "***REMOVED_RAZORPAY_SECRET***");
+//        String generatedSignature = HmacSHA256(orderId + "|" + paymentId, System.getenv("RAZORPAY_SECRET"));
 //        return generatedSignature.equals(signature);
 //    }
 //
